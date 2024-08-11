@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        #results {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+
+        #results button,
+        #results input[type="button"] {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #results input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #inputContainer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #inputContainer label {
+            display: inline-block;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>내신 점수 계산기</h1>
+
+    <div id="results">
+        <button onclick="addInput()">과목 추가</button>
+
+        <input type="button" value="제출" onclick="startcalc()">
+
+        <div id="inputContainer">
+            석차 <input type="text" name="dung" id="one0_1">
+            인원 <input type="text" name="man" id="one0_2">
+            동석차 <input type="text" name="dong" id="one0_3">
+            단위수 <input type="text" name="danwi" id="one0_4">
+        </div>
+    </div>
+</body>
+</html>
